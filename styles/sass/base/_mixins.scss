@@ -1,0 +1,20 @@
+@mixin flex ($flex, $center, $align) {
+    display: $flex;
+    justify-content: $center;
+    align-items: $align;
+}
+
+@mixin btn ($color, $width, $height, $borde){
+    background: $color;
+    width: $width;
+    height: $height;
+    border: $borde;
+}
+
+@mixin text ($size, $line, $weight, $color, $margin) {
+    font-size: $size;
+    line-height: $line;
+    font-weight: $weight;
+    color: $color;
+    margin-bottom: $margin;
+}

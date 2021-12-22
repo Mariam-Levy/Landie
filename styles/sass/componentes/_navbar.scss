@@ -1,0 +1,63 @@
+.navbar {
+    width: 100%;
+    min-height: 60px;
+    @include flex (flex, center, center);
+    margin-bottom: 243px;
+
+    @include large {
+        margin-bottom: 162px;
+    }
+
+    @include small {
+        margin-bottom: 80px;
+    }
+
+    .navbar__container {
+        @include flex (flex, space-between, center);
+
+        @include small {
+            flex-direction: column;
+            padding-top: 12px;
+        }
+
+        .navbar__list {
+            width: 20%;
+            @include flex (flex, space-between, none);
+            
+            @include large {
+                width: 30%;
+            }
+
+            @include medium {
+                width: 32%;
+            }
+
+            @include small {
+                /* width: 60%; */
+                order: 2;
+                margin-bottom: 30px;
+                width: 90%;
+            }
+
+            a {
+                color: $title-nav;
+                font-size: 14px;
+                font-weight: 400;
+
+                @include small {
+                    font-size: 20px;
+                }
+            }
+        }
+        .navbar__logo {
+            @include small {
+                margin-bottom: 20px;
+            }
+        }
+        .navbar__btn {
+            @include small {
+                order: 3;
+            }
+        }
+    }
+}
